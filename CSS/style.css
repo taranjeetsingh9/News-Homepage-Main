@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 3% 15%;
+  background-color: hsl(36, 100%, 99%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "myNav myNav  myNav myNav myNav myNav myNav "
+    "main main main  main main update update "
+    "footer footer  footer  footer footer footer footer";
+  gap: 10px;
+}
+
+.navbar {
+  grid-area: myNav;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1%;
+}
+.logo {
+  font-size: 64px;
+  font-weight: 800;
+  letter-spacing: -10px;
+}
+.mainNavbar {
+  padding: 30px;
+  font-size: 16px;
+  font-family: Inter;
+}
+.mainNavbar ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+.mainNavbar a {
+  text-decoration: none;
+  color: hsl(0, 0%, 62%);
+}
+.mainNavbar a:hover {
+  color: hsl(5, 85%, 63%);
+}
+
+.main {
+  grid-area: main;
+  margin-right: 2%;
+}
+.main-page-image img {
+  width: 100%;
+  height: 325px;
+}
+
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4%;
+}
+
+.main-heading {
+  font-family: "Inter";
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1;
+  width: 45%;
+  letter-spacing: 0.1px;
+}
+
+.contents {
+  position: relative;
+  width: 45%;
+}
+
+.contents p {
+  font-size: 15px;
+  font-family: "Inter";
+  color: hsl(236, 13%, 42%);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.read-more {
+  padding: 12px 24px;
+  background-color: hsl(5, 85%, 63%);
+  border: none;
+  font-family: "inter";
+  font-size: 16px;
+  letter-spacing: 5px;
+  color: hsl(36, 100%, 99%);
+  position: absolute;
+  bottom: 0;
+  font-weight: 600;
+  transition: transform 0.2 ease-in;
+}
+
+.read-more:hover {
+  background-color: hsla(240, 100%, 5%, 0.842);
+  transform: scale(0.9);
+}
+.side-new-update {
+  grid-area: update;
+  background-color: hsl(240, 100%, 5%);
+  padding: 45px;
+  font-family: "inter";
+}
+
+.side-new-update h2 {
+  color: hsl(35, 77%, 62%);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 2;
+}
+.side-new-update h3 {
+  color: hsl(36, 100%, 99%);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2;
+}
+.side-new-update p {
+  color: hsl(233, 8%, 79%);
+  font-size: 16px;
+  line-height: 2;
+}
+
+.footer {
+  margin-top: 3%;
+  grid-area: footer;
+  display: flex;
+  font-family: "Inter";
+  justify-content: space-between;
+}
+
+.rank {
+  display: flex;
+  justify-content: space-between;
+  width: 325px;
+}
+.rank-image img {
+  width: 100px;
+  height: 130px;
+}
+.rank-image img:hover {
+  transform: rotate(45);
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  align-items: start;
+}
+.info h3 {
+  font-size: 26px;
+  font-weight: 600;
+  color: hsl(233, 8%, 79%);
+  line-height: 1.5;
+}
+.info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 2;
+}
+.info p {
+  font-size: 15px;
+  line-height: 2;
+  color: hsl(233, 8%, 79%);
+}
