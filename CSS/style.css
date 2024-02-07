@@ -122,6 +122,10 @@ body {
   font-weight: 600;
   line-height: 2;
 }
+
+.side-new-update h3:hover {
+  color: hsl(35, 77%, 62%);
+}
 .side-new-update p {
   color: hsl(233, 8%, 79%);
   font-size: 16px;
@@ -164,6 +168,10 @@ body {
   font-size: 18px;
   font-weight: 600;
   line-height: 2;
+}
+
+.info h4:hover {
+  color: hsl(5, 85%, 63%);
 }
 .info p {
   font-size: 15px;
