@@ -178,3 +178,7 @@ body {
   line-height: 2;
   color: hsl(233, 8%, 79%);
 }
+
+.mobile-menu {
+  display: none;
+}
