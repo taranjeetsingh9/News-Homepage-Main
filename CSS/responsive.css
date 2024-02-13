@@ -1,4 +1,4 @@
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 410px) {
   body {
     padding: 3%;
   }
@@ -12,8 +12,17 @@
     flex-direction: column;
     gap: 10px;
   }
-  .mainNavbar {
-    display: none;
+  .mainNavbar ul {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    padding: 5%;
+  }
+  .mainNavbar ul li a {
+    color: black;
   }
   .logo {
     font-size: 36px;
@@ -68,7 +77,7 @@
   }
 
   .rank {
-    margin-top: -5%;
+    margin-top: 5%;
     display: flex;
     justify-content: space-between;
     width: 320px;
