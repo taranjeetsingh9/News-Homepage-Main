@@ -2,7 +2,6 @@
   body {
     padding: 3%;
     background-color: hsl(36, 100%, 99%);
-    overflow: hidden;
     width: 100%;
     /* background-color: hsl(233, 8%, 79%); */
   }
@@ -10,6 +9,7 @@
   .grid-container {
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
   }
   .main-content {
     display: flex;
