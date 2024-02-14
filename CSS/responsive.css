@@ -2,7 +2,8 @@
   body {
     padding: 3%;
     background-color: hsl(36, 100%, 99%);
-    overflow-x: hidden;
+    overflow: hidden;
+    width: 100%;
     /* background-color: hsl(233, 8%, 79%); */
   }
 
